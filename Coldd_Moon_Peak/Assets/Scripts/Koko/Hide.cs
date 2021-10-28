@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HideScript : MonoBehaviour
+public class Hide : MonoBehaviour
 {
     private bool visible; //bool to trigger the sprite being on and off
     public GameObject[] gameObjects; //creates an array to hold gameobjects

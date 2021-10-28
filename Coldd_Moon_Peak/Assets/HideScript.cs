@@ -8,6 +8,7 @@ public class HideScript : MonoBehaviour
     public GameObject[] gameObjects; //creates an array to hold gameobjects
     public GameObject tint;
     public float tint_timer = 10;
+    private bool countdownTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,7 @@ public class HideScript : MonoBehaviour
                 }
                 tint.SetActive(true);
                 visible = true;
+                countdownTimer = true;
             }
             else if(visible == true)//turns off all gameobjects if visible is true
             {

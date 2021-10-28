@@ -649,8 +649,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2042343297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99cfc32510b4ad24e86e4e636e3810dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 239bdbc71c11e69499bbd7154e5d4d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjects: []
   tint: {fileID: 1826566522}
+  tint_timer: 10

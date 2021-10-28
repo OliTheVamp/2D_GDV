@@ -7,7 +7,7 @@ public class HideScript : MonoBehaviour
     private bool visible; //bool to trigger the sprite being on and off
     public GameObject[] gameObjects; //creates an array to hold gameobjects
     public GameObject tint;
-
+    public float tint_timer = 10;
 
     // Start is called before the first frame update
     void Start()

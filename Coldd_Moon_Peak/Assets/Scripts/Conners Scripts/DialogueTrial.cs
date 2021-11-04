@@ -16,16 +16,29 @@ public class DialogueTrial : MonoBehaviour
     private List<string> eachLine;
     void Start()
     {
+        string[] sentence = new string[5];
         theWholeFileAsOneLongString = dictionaryTextFile.text;
 
         eachLine = new List<string>();
         eachLine.AddRange(theWholeFileAsOneLongString.Split("\n"[0]));
-        //foreach(char Letter in sentence[index].ToCharArray())
+        //foreach (char Letter in sentence[index].ToCharArray())
         //{
         //    Words.text += Letter;
         //}
-        // you're done.
-        Words.text = eachLine[3];
+        //Words.text = eachLine[3];
+        sentence[0] = eachLine[3];
+        foreach (char Letter in sentence[index].ToCharArray())
+        {
+            if (Letter != '|')
+            {
+                Words.text += Letter;
+            }
+            else
+            {
+                break;
+            }
+        }
+        //Words.text = eachLine[3];
         Debug.Log(eachLine[4]);
         Debug.Log(eachLine[10]);
 

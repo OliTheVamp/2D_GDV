@@ -37,7 +37,7 @@ public class dialogueTrigger : MonoBehaviour
         else
         {
             dialoguePanel.enabled = true;
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 redTalks = !redTalks;
                 chatValue--;

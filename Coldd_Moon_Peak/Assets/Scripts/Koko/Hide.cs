@@ -34,7 +34,7 @@ public class Hide : MonoBehaviour
     {
 
         //things underneath will occur when spacebar is held down
-        if (Input.GetKey(KeyCode.Space)) //User holds down space
+        if (Input.GetKey(KeyCode.Z)) //User holds down space
         {
             spacekeytime += Time.deltaTime; //Checks if user is holding down the space key
 

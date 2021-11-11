@@ -7,7 +7,10 @@ public class Hide : MonoBehaviour
     private bool visible; //bool to trigger the sprite being on and off
     public GameObject[] gameObjects; //creates an array to hold gameobjects
     public GameObject tint;
-    public float tint_timer = 10;
+    float tint_timer;
+    public float maxTime = 5f;
+    public float timeSpan = 0.1f;
+    public float spacekeytime;
 
     // Start is called before the first frame update
     void Start()
@@ -23,33 +26,52 @@ public class Hide : MonoBehaviour
         }
         tint.SetActive(false);//hides tint
         visible = false;
-
+        tint_timer = maxTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //things underneath will occur when spacebar is pressed
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        //things underneath will occur when spacebar is held down
+        if (Input.GetKey(KeyCode.Space)) //User holds down space
         {
-            if (visible == false)//turns on all the gameobjects if visible is false
+            spacekeytime += Time.deltaTime; //Checks if user is holding down the space key
+
+            if (spacekeytime > timeSpan) //If user is holding down the space key, the code runs
             {
-                for (int i = 0; i < gameObjects.Length; i++)
+
+                Debug.Log(tint_timer);
+
+                if (tint_timer > 0) // Shows Objects with tint
                 {
-                    gameObjects[i].SetActive(true);
+                    for (int i = 0; i < gameObjects.Length; i++)
+                    {
+                        gameObjects[i].SetActive(true);
+                    }
+                    tint.SetActive(true);
+                    tint_timer -= Time.deltaTime;
                 }
-                tint.SetActive(true);
-                visible = true;
-            }
-            else if (visible == true)//turns off all gameobjects if visible is true
+                else if (tint_timer <= 0) //turns off tint + objects
+                {
+
+                        for (int i = 0; i < gameObjects.Length; i++)
+                        {
+                            gameObjects[i].SetActive(false);
+                        }
+                        tint.SetActive(false);
+
+                }
+            } 
+        }
+        else //user is NOT holding space
+        {
+            spacekeytime = 0;
+            for (int i = 0; i < gameObjects.Length; i++)
             {
-                for (int i = 0; i < gameObjects.Length; i++)
-                {
-                    gameObjects[i].SetActive(false);
-                }
-                tint.SetActive(false);
-                visible = false;
+                gameObjects[i].SetActive(false);
             }
+            tint.SetActive(false);
         }
     }
 }

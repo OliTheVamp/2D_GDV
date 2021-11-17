@@ -468,6 +468,7 @@ MonoBehaviour:
   m_ActiveColor: {r: 0, g: 0, b: 0, a: 0}
   dialoguePanel: {fileID: 1746719166}
   chatValue: 8
+  visualCue: {fileID: 885705432}
 --- !u!1 &885705432
 GameObject:
   m_ObjectHideFlags: 0

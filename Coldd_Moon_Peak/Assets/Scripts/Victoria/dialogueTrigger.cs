@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class dialogueTrigger : MonoBehaviour
 {
-    public bool dialogueActive = false;
+    public bool dialogueActive { get; private set; }
     public bool redTalks = false;
     public GameObject redChar;
     public GameObject blueChar;
@@ -15,6 +15,34 @@ public class dialogueTrigger : MonoBehaviour
     public Color m_ActiveColor;
     public Canvas dialoguePanel;
     public int chatValue = 8;
+
+    [Header("Visual Cue")]
+    public GameObject visualCue;
+
+    private bool playerInRange;
+
+    private void Awake()
+    {
+        dialogueActive = false;
+        playerInRange = false;
+        visualCue.SetActive(false);   
+    }
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            playerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            playerInRange = false;
+        }
+    }
+
     private void Start()
     {
         redCharI = redChar.GetComponent<Image>();
@@ -25,10 +53,22 @@ public class dialogueTrigger : MonoBehaviour
 
     private void Update()
     {
+        if (playerInRange)
+        {
+            visualCue.SetActive(true);
+        }
+        else
+        {
+            visualCue.SetActive(false);
+        }
+
         if (Input.GetKeyDown(KeyCode.E))
         {
-            chatValue = 8;
-            dialogueActive = true;
+            if (playerInRange)
+            {
+                chatValue = 8;
+                dialogueActive = true;
+            }
         }
         if (!dialogueActive)
         {

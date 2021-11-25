@@ -48,10 +48,10 @@ public class FinalDialogueChoices : MonoBehaviour
             choiceThree.gameObject.SetActive(false);
             choiceFour.gameObject.SetActive(false);
         }
-        if (roundThreeChosen && choicesCorrect == 3)
-            winScreen();
-        else
-            loseScreen();
+       // if (roundThreeChosen && choicesCorrect == 3)
+         //   winScreen();
+      //  else
+          //  loseScreen();
 
     }
     public void CorrectButton()

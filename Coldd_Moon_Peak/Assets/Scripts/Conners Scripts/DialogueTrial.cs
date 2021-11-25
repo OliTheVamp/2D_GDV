@@ -13,7 +13,10 @@ public class DialogueTrial : MonoBehaviour
     private string theWholeFileAsOneLongString;
     private string[] sentence;
     private int index;
+    private int side;
+    public bool Type;
     private int currentIndex;
+    public float typyingSpeed = 0.02f;
     private List<string> eachLine;
     void Start()
     {
@@ -22,63 +25,70 @@ public class DialogueTrial : MonoBehaviour
 
         eachLine = new List<string>();
         eachLine.AddRange(theWholeFileAsOneLongString.Split("\n"[0]));
-        //foreach (char Letter in sentence[index].ToCharArray())
-        //{
-        //    Words.text += Letter;
-        //}
-        //Words.text = eachLine[3];
+
 
         sentence[0] = eachLine[0];
-        foreach (char Letter in sentence[index].ToCharArray())
-        {
-            if (Letter != '|')
-            {
-                Words.text += Letter;
-            }
-            else
-            {
-                break;
-            }
-        }
+        sentence[1] = eachLine[1];
+        sentence[2] = eachLine[2];
+        sentence[3] = eachLine[3];
 
-        currentIndex = 0;
-
-        //Words.text = eachLine[3];
         Debug.Log(eachLine[4]);
         Debug.Log(eachLine[10]);
 
         Debug.Log(eachLine[0]);
 
-        /*if (Input.GetKeyDown(KeyCode.F))
-        {
-            i++;
-        }*/
-        //int kWords = eachLine.Count;
-        //Debug.Log(eachLine[kWords - 1]);
 
-        //malkin sense of it rn
-     }
-}
-/*
-    private void Update()
+
+
+
+    }
+
+    void Update()
     {
-
-        sentence[index] = eachLine[currentIndex];
-        foreach (char Letter in sentence[index].ToCharArray())
-        {
-            if (Letter != '|')
-            {
-                Words.text += Letter;
-            }
-            else
-            {
-                break;
-            }
-        }
         if (Input.GetKeyDown(KeyCode.F))
         {
-            currentIndex += 1;
-            Debug.Log("you pressed. current index" + currentIndex);
+            Type = true;
         }
+        if (side == 0)
+        {
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
+
+        }
+        if (side == 1 && Type == true)
+        {
+            Words.text = "";
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
+
+        }
+
     }
-}*/
+}
+
+
+    

@@ -13,6 +13,7 @@ public class DialogueTrial : MonoBehaviour
     private string theWholeFileAsOneLongString;
     private string[] sentence;
     private int index;
+    private int currentIndex;
     private List<string> eachLine;
     void Start()
     {
@@ -26,7 +27,8 @@ public class DialogueTrial : MonoBehaviour
         //    Words.text += Letter;
         //}
         //Words.text = eachLine[3];
-        sentence[0] = eachLine[3];
+
+        sentence[0] = eachLine[0];
         foreach (char Letter in sentence[index].ToCharArray())
         {
             if (Letter != '|')
@@ -38,12 +40,45 @@ public class DialogueTrial : MonoBehaviour
                 break;
             }
         }
+
+        currentIndex = 0;
+
         //Words.text = eachLine[3];
         Debug.Log(eachLine[4]);
         Debug.Log(eachLine[10]);
 
         Debug.Log(eachLine[0]);
+
+        /*if (Input.GetKeyDown(KeyCode.F))
+        {
+            i++;
+        }*/
         //int kWords = eachLine.Count;
         //Debug.Log(eachLine[kWords - 1]);
-    }
+
+        //malkin sense of it rn
+     }
 }
+/*
+    private void Update()
+    {
+
+        sentence[index] = eachLine[currentIndex];
+        foreach (char Letter in sentence[index].ToCharArray())
+        {
+            if (Letter != '|')
+            {
+                Words.text += Letter;
+            }
+            else
+            {
+                break;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            currentIndex += 1;
+            Debug.Log("you pressed. current index" + currentIndex);
+        }
+    }
+}*/

@@ -86,7 +86,197 @@ public class DialogueTrial : MonoBehaviour
             side++;
 
         }
+        if (side == 2 && Type == true)
+        {
+            Words.text = "";
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
 
+        }
+        if (side == 3 && Type == true)
+        {
+            Words.text = "";
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
+
+        }
+        if (side == 4 && Type == true)
+        {
+            Words.text = "";
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
+
+        }
+        if (side == 5 && Type == true)
+        {
+            Words.text = "";
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
+
+        }
+        if (side == 6 && Type == true)
+        {
+            Words.text = "";
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
+
+        }
+        if (side == 7 && Type == true)
+        {
+            Words.text = "";
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
+
+        }
+        if (side == 8 && Type == true)
+        {
+            Words.text = "";
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
+
+        }
+        if (side == 9 && Type == true)
+        {
+            Words.text = "";
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
+
+        }
+        if (side == 10 && Type == true)
+        {
+            Words.text = "";
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
+
+        }
+        if (side == 11 && Type == true)
+        {
+            Words.text = "";
+            //Words.text = eachLine[side];
+            foreach (char Letter in eachLine[side].ToCharArray())
+            {
+                if (Letter != '|')
+                {
+                    Words.text += Letter;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Type = false;
+            side++;
+
+        }
+       
     }
 }
 

@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - TintObject
+  - pickUppable
+  - item1
+  - item2
+  - item3
+  - item4
+  - item5
+  - item6
   layers:
   - Default
   - TransparentFX

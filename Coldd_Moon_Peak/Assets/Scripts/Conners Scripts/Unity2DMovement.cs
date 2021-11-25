@@ -16,6 +16,7 @@ public class Unity2DMovement : UnityPhysicsObj
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        
     }
 
     protected override void ComputeVelocity()

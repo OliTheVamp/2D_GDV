@@ -12,6 +12,8 @@ TagManager:
   - item4
   - item5
   - item6
+  - bloo
+  - collisionTint
   layers:
   - Default
   - TransparentFX

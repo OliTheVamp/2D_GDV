@@ -276,7 +276,6 @@ public class DialogueTrial : MonoBehaviour
             side++;
 
         }
-       
     }
 }
 

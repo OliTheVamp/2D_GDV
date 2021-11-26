@@ -83,7 +83,7 @@ public class Talking : MonoBehaviour
             dialoguePanel.enabled = true;
             player.SetActive(false);
             player.SetActive(false);
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 redTalks = !redTalks;
                 chatValue--;

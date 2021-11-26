@@ -27,8 +27,9 @@ public class FinalDialogueChoices : MonoBehaviour
         choiceFive.gameObject.SetActive(false);
         choiceSix.gameObject.SetActive(false);
     }
-    void Update() {
-    if (!roundOneChosen)
+    void Update()
+    {
+        if (!roundOneChosen)
         {
             choiceOne.gameObject.SetActive(true);
             choiceTwo.gameObject.SetActive(true);
@@ -86,40 +87,40 @@ public class FinalDialogueChoices : MonoBehaviour
         }
     }
 
-   // public void winScreen()
-   // {
-   //     SceneManager.LoadScene(3);
-   // }
+    // public void winScreen()
+    // {
+    //     SceneManager.LoadScene(3);
+    // }
 
-   //public void loseScreen()
-   // {
-   //     SceneManager.LoadScene(2);
-   // }
-        /*
-    public GameObject dialoguePanel;
-    public GameObject dialogueText;
+    //public void loseScreen()
+    // {
+    //     SceneManager.LoadScene(2);
+    // }
+    /*
+public GameObject dialoguePanel;
+public GameObject dialogueText;
 
-    public GameObject[] choices;
-    public Text[] choicesText;
+public GameObject[] choices;
+public Text[] choicesText;
 
-    bool finalDialoguePlaying
+bool finalDialoguePlaying
 
-    void Start()
+void Start()
+{
+    finaldialoguePlaying = false;
+    dialoguePanel.SetActive = false;
+
+    choicesText = new Text[choices.Length];
+    int index = 0;
+    foreach(GameObject choice in choices)
     {
-        finaldialoguePlaying = false;
-        dialoguePanel.SetActive = false;
-
-        choicesText = new Text[choices.Length];
-        int index = 0;
-        foreach(GameObject choice in choices)
-        {
-            choicesText[index] = choice.GetComponentInChildren<Text>();
-            index ++
-        }
+        choicesText[index] = choice.GetComponentInChildren<Text>();
+        index ++
     }
+}
 
-    void DisplayChoices()
-    {
+void DisplayChoices()
+{
 
-    }*/
+}*/
 }

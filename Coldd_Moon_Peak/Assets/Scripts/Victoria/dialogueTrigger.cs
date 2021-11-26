@@ -14,7 +14,7 @@ public class dialogueTrigger : MonoBehaviour
     public Color m_InactiveColor;
     public Color m_ActiveColor;
     public Canvas dialoguePanel;
-    public int chatValue = 8;
+    public int chatValue = 12;
     private void Start()
     {
         redCharI = redChar.GetComponent<Image>();
@@ -27,7 +27,7 @@ public class dialogueTrigger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            chatValue = 8;
+            chatValue = 12;
             dialogueActive = true;
         }
         if (!dialogueActive)
@@ -37,7 +37,7 @@ public class dialogueTrigger : MonoBehaviour
         else
         {
             dialoguePanel.enabled = true;
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 redTalks = !redTalks;
                 chatValue--;

@@ -48,10 +48,10 @@ public class FinalDialogueChoices : MonoBehaviour
             choiceThree.gameObject.SetActive(false);
             choiceFour.gameObject.SetActive(false);
         }
-       // if (roundThreeChosen && choicesCorrect == 3)
-         //   winScreen();
-      //  else
-          //  loseScreen();
+        if (roundThreeChosen && choicesCorrect == 3)
+            winScreen();
+        else if (roundThreeChosen)
+            loseScreen();
 
     }
     public void CorrectButton()
@@ -86,12 +86,12 @@ public class FinalDialogueChoices : MonoBehaviour
         }
     }
 
-    void winscreen()
+    public void winScreen()
     {
         SceneManager.LoadScene(3);
     }
 
-    void losescreen()
+   public void loseScreen()
     {
         SceneManager.LoadScene(2);
     }

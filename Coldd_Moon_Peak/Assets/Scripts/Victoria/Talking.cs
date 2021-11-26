@@ -14,7 +14,7 @@ public class Talking : MonoBehaviour
     public Color m_InactiveColor;
     public Color m_ActiveColor;
     public Canvas dialoguePanel;
-    public int chatValue = 8;
+    public int chatValue = 12;
     public GameObject player;
     public GameObject ghost;
 
@@ -68,7 +68,7 @@ public class Talking : MonoBehaviour
         {
             if (playerInRange)
             {
-                chatValue = 8;
+                chatValue = 12;
                 dialogueActive = true;
             }
         }
@@ -83,7 +83,7 @@ public class Talking : MonoBehaviour
             dialoguePanel.enabled = true;
             player.SetActive(false);
             player.SetActive(false);
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 redTalks = !redTalks;
                 chatValue--;

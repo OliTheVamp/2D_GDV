@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/VictoriaScene.unity
     guid: 56d4504563422aa49a4a124a3911a6cc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: a1da55e03ac567d43a66b34389c85ede
   m_configObjects: {}

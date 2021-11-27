@@ -825,6 +825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f54ca0572409d42a8e2db65abd77a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalDialogueActive: 0
 --- !u!1 &549234444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,7 +1810,10 @@ MonoBehaviour:
   chatValue: 8
   player: {fileID: 542365888}
   ghost: {fileID: 636303737}
+  dialogueSwappable: 0
   visualCue: {fileID: 1561652866}
+  pickupScript: {fileID: 542365895}
+  finalDialoguePlay: 0
 --- !u!4 &1202473778
 Transform:
   m_ObjectHideFlags: 0
@@ -2023,6 +2027,7 @@ MonoBehaviour:
   choiceFour: {fileID: 1115874974}
   choiceFive: {fileID: 630407377}
   choiceSix: {fileID: 1945080236}
+  FinalItemRetrieved: {fileID: 1202473777}
 --- !u!1 &1468887139
 GameObject:
   m_ObjectHideFlags: 0

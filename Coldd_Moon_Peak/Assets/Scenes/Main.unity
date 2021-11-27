@@ -2378,7 +2378,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1352767537}
   - component: {fileID: 1352767539}
-  - component: {fileID: 1352767538}
   m_Layer: 0
   m_Name: Talking Cam
   m_TagString: MainCamera
@@ -2401,14 +2400,6 @@ Transform:
   m_Father: {fileID: 941186593}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1352767538
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352767536}
-  m_Enabled: 1
 --- !u!20 &1352767539
 Camera:
   m_ObjectHideFlags: 0
@@ -2874,7 +2865,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69b270a2d985d1469063dfe6ddf5918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dictionaryTextFile: {fileID: 4900000, guid: 0c67069b45b42664ba0b304f8e510af3, type: 3}
+  TextFileOne: {fileID: 4900000, guid: 0c67069b45b42664ba0b304f8e510af3, type: 3}
+  TextFileTwo: {fileID: 4900000, guid: 226bad8909508a345be23c099240f8f1, type: 3}
+  TextFileTwoV2: {fileID: 4900000, guid: 32e513e5b6ca6a54c9839aeb68b19e5e, type: 3}
+  TextFileThree: {fileID: 4900000, guid: cf7981b698c90a248b8f85f1e4c50341, type: 3}
+  TextFileThreeV2: {fileID: 4900000, guid: b01960c34009ada43bb2facab50ed813, type: 3}
+  TextFileFour: {fileID: 4900000, guid: 327708929b28f95449ad34b9fb8c1d2f, type: 3}
+  TextFileFourV2: {fileID: 4900000, guid: 935f8f89fa264ce41a858e71ae710b0d, type: 3}
+  TextFileFive: {fileID: 4900000, guid: 97ccd12da6e65b8459f7e9e5cc06832b, type: 3}
+  TextFileSix: {fileID: 4900000, guid: 5617d3507fa6ca04c915859e9ce50b17, type: 3}
   Words: {fileID: 1583045039}
   Type: 0
   typyingSpeed: 0.02

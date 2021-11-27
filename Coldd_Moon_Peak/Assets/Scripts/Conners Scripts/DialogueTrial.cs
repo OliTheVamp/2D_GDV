@@ -57,7 +57,8 @@ public class DialogueTrial : MonoBehaviour
     private List<string> eachLineFileSix;//
 
     public Hide hideObject;
-   
+    public Talking talkPlayer;
+
     void FileOneSetup()
     {
         string[] sentence = new string[5];
@@ -209,23 +210,66 @@ public class DialogueTrial : MonoBehaviour
     void Update()
     {
         if (hideObject.item1bool == false && hideObject.item2bool == false)
-            Print();
+        {
+            if (!talkPlayer.printedOne)
+            {
+                Print();
+                talkPlayer.printedOne = true;
+            }
+        }
         if (hideObject.item1bool)
-            PrintTwo();
+        {
+            if (!talkPlayer.printedTwo)
+            {
+                PrintTwo();
+                talkPlayer.printedTwo = true;
+            }
+        }
         if (hideObject.item2bool)
-            PrintTwoV2();
+        {
+            if (!talkPlayer.printedTwoV2)
+            {
+                PrintTwoV2();
+                talkPlayer.printedTwoV2 = true;
+            }
+        }
         if (hideObject.item3bool)
-            PrintThree();
+        {
+            if (!talkPlayer.printedThree)
+            {
+                PrintThree();
+                talkPlayer.printedThree = true;
+            }
+        }
         if (hideObject.item4bool)
-            PrintThreeV2();
+        {
+            if (!talkPlayer.printedThreeV2)
+            {
+                PrintThreeV2();
+                talkPlayer.printedThreeV2 = true;
+            }
+        }
         if (hideObject.item5bool)
-            PrintFour();
+        {
+            if (!talkPlayer.printedFour)
+            {
+                PrintFour();
+                talkPlayer.printedFour = true;
+            }
+        }
         if (hideObject.item6bool)
-            PrintFourV2();
+        {
+            if (!talkPlayer.printedFourV2)
+            {
+                PrintFourV2();
+                talkPlayer.printedFourV2 = true;
+            }
+        }
     }
     
     void Print() 
     {
+
         side = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {

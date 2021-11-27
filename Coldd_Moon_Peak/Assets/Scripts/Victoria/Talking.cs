@@ -29,6 +29,16 @@ public class Talking : MonoBehaviour
     public PickUp pickupScript;
     public bool finalDialoguePlay;
 
+    public bool printedOne;
+    public bool printedTwo;
+    public bool printedTwoV2;//
+    public bool printedThree;
+    public bool printedThreeV2;
+    public bool printedFour;//
+    public bool printedFourV2;
+    public bool printedFive;
+    public bool printedSix;//
+
     private void Awake()
     {
         dialogueActive = false;
@@ -59,6 +69,15 @@ public class Talking : MonoBehaviour
         blueCharI = blueChar.GetComponent<Image>();
         m_InactiveColor = Color.grey;
         m_ActiveColor = Color.white;
+        printedOne = false;
+        printedTwo = false;
+        printedTwoV2 = false;//
+        printedThree = false;
+        printedThreeV2 = false;
+        printedFour = false; ;//
+        printedFourV2 = false;
+        printedFive = false;
+        printedSix = false;//
     }
 
     private void Update()

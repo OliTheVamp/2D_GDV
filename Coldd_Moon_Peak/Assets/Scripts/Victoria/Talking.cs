@@ -26,7 +26,7 @@ public class Talking : MonoBehaviour
     private bool playerInRange;
 
     [Header("Final Dialogue")]
-    public PickUp pickupScript;
+    public Hide hideScriptObject;
     public bool finalDialoguePlay;
 
     public bool printedOne;
@@ -95,9 +95,8 @@ public class Talking : MonoBehaviour
         {
             if (playerInRange)
             {
-
                 dialogueCount++;
-                if (pickupScript.finalDialogueActive)
+                if (hideScriptObject.finalDialogueActive)
                 {
                     finalDialoguePlay = true;
                     dialogueActive = true;

@@ -19,6 +19,7 @@ public class Talking : MonoBehaviour
     public GameObject player;
     public GameObject ghost;
     public bool dialogueSwappable;
+    public int dialogueCount = 0;
 
     [Header("Visual Cue")]
     public GameObject visualCue;
@@ -75,6 +76,8 @@ public class Talking : MonoBehaviour
         {
             if (playerInRange)
             {
+
+                dialogueCount++;
                 if (pickupScript.finalDialogueActive)
                 {
                     finalDialoguePlay = true;

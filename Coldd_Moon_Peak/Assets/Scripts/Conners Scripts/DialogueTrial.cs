@@ -221,61 +221,64 @@ public class DialogueTrial : MonoBehaviour
 
     void Update()
     {
-        if (!hideObject.item1bool && !hideObject.item2bool && !convoOneFinished)
+        if (talkPlayer.dialogueActive)
         {
-            //if (!talkPlayer.printedOne)
-            //{
+            if (!hideObject.item1bool && !hideObject.item2bool && !convoOneFinished)
+            {
+                //if (!talkPlayer.printedOne)
+                //{
                 Print();
                 talkPlayer.printedOne = true;
-            //}
-        }
-        if (hideObject.item1bool && !convoTwoFinished)
-        {
-           // if (!talkPlayer.printedTwo)
-           // {
+                //}
+            }
+            if (hideObject.item1bool && !convoTwoFinished)
+            {
+                // if (!talkPlayer.printedTwo)
+                // {
                 PrintTwo();
                 talkPlayer.printedTwo = true;
-           // }
-        }
-        if (hideObject.item2bool && !convoTwoV2Finished)
-        {
-           // if (!talkPlayer.printedTwoV2)
-            //{
+                // }
+            }
+            if (hideObject.item2bool && !convoTwoV2Finished)
+            {
+                // if (!talkPlayer.printedTwoV2)
+                //{
                 PrintTwoV2();
                 talkPlayer.printedTwoV2 = true;
-           // }
-        }
-        if (hideObject.item3bool && !convoThreeFinished)
-        {
-           // if (!talkPlayer.printedThree)
-            //{
+                // }
+            }
+            if (hideObject.item3bool && !convoThreeFinished)
+            {
+                // if (!talkPlayer.printedThree)
+                //{
                 PrintThree();
                 talkPlayer.printedThree = true;
-           // }
-        }
-        if (hideObject.item4bool && !convoThreeV2Finished)
-        {
-          //  if (!talkPlayer.printedThreeV2)
-           // {
+                // }
+            }
+            if (hideObject.item4bool && !convoThreeV2Finished)
+            {
+                //  if (!talkPlayer.printedThreeV2)
+                // {
                 PrintThreeV2();
                 talkPlayer.printedThreeV2 = true;
-           // }
-        }
-        if (hideObject.item5bool && !convoFourFinished)
-        {
-            //if (!talkPlayer.printedFour)
-           // {
+                // }
+            }
+            if (hideObject.item5bool && !convoFourFinished)
+            {
+                //if (!talkPlayer.printedFour)
+                // {
                 PrintFour();
                 talkPlayer.printedFour = true;
-           // }
-        }
-        if (hideObject.item6bool && !convoFourV2Finished)
-        {
-            //if (!talkPlayer.printedFourV2)
-            //{
+                // }
+            }
+            if (hideObject.item6bool && !convoFourV2Finished)
+            {
+                //if (!talkPlayer.printedFourV2)
+                //{
                 PrintFourV2();
                 talkPlayer.printedFourV2 = true;
-            //}
+                //}
+            }
         }
     }
     

@@ -11,20 +11,21 @@ public class Hide : MonoBehaviour
     public GameObject item4;
     public GameObject item5;
     public GameObject item6;
-
+    public Talking dialogueCount;
     private bool isInside;
     public GameObject tint;
+    public bool finalDialogueActive;
     float tint_timer;
     public float maxTime = 5f;
     public float timeSpan = 0.1f;
     public float spacekeytime;
 
-    private bool item1bool = false;
-    private bool item2bool = false;
-    private bool item3bool = false;
-    private bool item4bool = false;
-    private bool item5bool = false;
-    private bool item6bool = false;
+    public bool item1bool = false;
+    public bool item2bool = false;
+    public bool item3bool = false;
+    public bool item4bool = false;
+    public bool item5bool = false;
+    public bool item6bool = false;
 
 
     public GameObject eyeClosed;
@@ -33,6 +34,9 @@ public class Hide : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        finalDialogueActive = false;
+        GameObject g = GameObject.FindGameObjectWithTag("Talking");
+        dialogueCount = g.GetComponent<Talking>();
         tint.GetComponent<SpriteRenderer>().material.color = new Color(1f, 1f, 1f, 0.5f);//sets the opacity of the tint sprite to 50%
                                                                                          //puts all objects with the tag "TintObjecT" into the gameObjects array
         eyeOpen.SetActive(false);                                                 //puts all objects with the tag "TintObjecT" into the gameObjects array
@@ -53,16 +57,40 @@ public class Hide : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        //things underneath will occur when spacebar is held down
-        if (Input.GetKey(KeyCode.Z)) //User holds down space
+        //deactivates items when they've been collided with
+        if (item1bool)
         {
-            spacekeytime += Time.deltaTime; //Checks if user is holding down the space key
+            item1.SetActive(false);
+        }
+        if (item2bool)
+        {
+            item2.SetActive(false);
+        }
+        if (item3bool)
+        {
+            item3.SetActive(false);
+        }
+        if (item4bool)
+        {
+            item4.SetActive(false);
+        }
+        if (item5bool)
+        {
+            item5.SetActive(false);
+        }
+        if (item6bool)
+        {
+            item6.SetActive(false);
+        }
 
-            if (spacekeytime > timeSpan) //If user is holding down the space key, the code runs
+
+        //things underneath will occur when Z is held down
+        if (Input.GetKey(KeyCode.Z)) //User holds down Z
+        {
+            spacekeytime += Time.deltaTime; //Checks if user is holding down the Z key
+
+            if (spacekeytime > timeSpan) //If user is holding down the Z key, the code runs
             {
-
-                Debug.Log(tint_timer);
 
                 if (tint_timer > 0) // Shows Objects with tint
                 {
@@ -76,15 +104,18 @@ public class Hide : MonoBehaviour
                         eyeClosed.SetActive(true);
                         eyeOpen.SetActive(false);
                     }
-                    if (!item1bool)
+                    if(dialogueCount.dialogueCount==1)
                     {
-                        item1.SetActive(true);
-                    }if (!item2bool)
-                    {
-                        item2.SetActive(true);
+                        if (!item1bool)
+                        {
+                            item1.SetActive(true);
+                        }
+                        if (!item2bool)
+                        {
+                            item2.SetActive(true);
+                        }
                     }
-                    
-                    if(item1bool && item2bool)
+                    if(dialogueCount.dialogueCount == 2)
                     {
                         if (!item3bool)
                         {
@@ -95,7 +126,7 @@ public class Hide : MonoBehaviour
                             item4.SetActive(true);
                         }
                     }
-                    if(item3bool && item4bool)
+                    if(dialogueCount.dialogueCount == 3)
                     {
                         if (!item5bool)
                         {
@@ -124,7 +155,7 @@ public class Hide : MonoBehaviour
             } 
         }
 
-        else //user is NOT holding space
+        else //user is NOT holding Z
         {
             spacekeytime = 0;
             item1.SetActive(false);
@@ -147,45 +178,53 @@ public class Hide : MonoBehaviour
         }
         if (other.gameObject.tag == "item1")
         {
-            other.gameObject.SetActive(false);
             Debug.Log("You got item 1");
             isInside = false;
             item1bool = true;
+            item2bool = true;
+            objectQuest++;
         }
         if (other.gameObject.tag == "item2")
         {
-            other.gameObject.SetActive(false);
             Debug.Log("You got item 2");
             isInside = false;
             item2bool = true;
+            item1bool = true;
+            objectQuest++;
         }
         if (other.gameObject.tag == "item3")
         {
-            other.gameObject.SetActive(false);
             Debug.Log("You got item 3");
             isInside = false;
             item3bool = true;
+            item4bool = true;
+            objectQuest++;
         }
         if (other.gameObject.tag == "item4")
         {
-            other.gameObject.SetActive(false);
             Debug.Log("You got item 4");
             isInside = false;
             item4bool = true;
+            item3bool = true;
+            objectQuest++;
         }
         if (other.gameObject.tag == "item5")
         {
-            other.gameObject.SetActive(false);
             Debug.Log("You got item 5");
+            finalDialogueActive = true;
             isInside = false;
             item5bool = true;
+            item6bool = true;
+            objectQuest++;
         }
         if (other.gameObject.tag == "item6")
         {
-            other.gameObject.SetActive(false);
             Debug.Log("You got item 6");
+            finalDialogueActive = true;
             isInside = false;
             item6bool = true;
+            item5bool = true;
+            objectQuest++;
         }
 
     }

@@ -18,42 +18,50 @@ public class FinalDialogueChoices : MonoBehaviour
     public Button choiceFour;
     public Button choiceFive;
     public Button choiceSix;
-    void OnEnable()
+
+    public Talking FinalItemRetrieved;
+
+   void OnEnable()
     {
-        choiceOne.gameObject.SetActive(true);
-        choiceTwo.gameObject.SetActive(true);
-        choiceThree.gameObject.SetActive(false);
-        choiceFour.gameObject.SetActive(false);
-        choiceFive.gameObject.SetActive(false);
-        choiceSix.gameObject.SetActive(false);
+         choiceOne.gameObject.SetActive(false);
+         choiceTwo.gameObject.SetActive(false);
+         choiceThree.gameObject.SetActive(false);
+         choiceFour.gameObject.SetActive(false);
+         choiceFive.gameObject.SetActive(false);
+         choiceSix.gameObject.SetActive(false);
+        
     }
     void Update()
     {
-        if (!roundOneChosen)
-        {
-            choiceOne.gameObject.SetActive(true);
-            choiceTwo.gameObject.SetActive(true);
-        }
-        if (!roundTwoChosen && roundOneChosen)
-        {
-            choiceThree.gameObject.SetActive(true);
-            choiceFour.gameObject.SetActive(true);
-            choiceOne.gameObject.SetActive(false);
-            choiceTwo.gameObject.SetActive(false);
-        }
 
-        if (!roundThreeChosen && roundTwoChosen)
+        if (FinalItemRetrieved.finalDialoguePlay)
         {
-            choiceFive.gameObject.SetActive(true);
-            choiceSix.gameObject.SetActive(true);
-            choiceThree.gameObject.SetActive(false);
-            choiceFour.gameObject.SetActive(false);
-        }
-        if (roundThreeChosen && choicesCorrect == 3)
-            winScreen();
-        else if (roundThreeChosen)
-            loseScreen();
+            if (!roundOneChosen)
+            {
+                choiceOne.gameObject.SetActive(true);
+                choiceTwo.gameObject.SetActive(true);
+            }
+            if (!roundTwoChosen && roundOneChosen)
+            {
+                choiceThree.gameObject.SetActive(true);
+                choiceFour.gameObject.SetActive(true);
+                choiceOne.gameObject.SetActive(false);
+                choiceTwo.gameObject.SetActive(false);
+            }
 
+            if (!roundThreeChosen && roundTwoChosen)
+            {
+                choiceFive.gameObject.SetActive(true);
+                choiceSix.gameObject.SetActive(true);
+                choiceThree.gameObject.SetActive(false);
+                choiceFour.gameObject.SetActive(false);
+            }
+            if (roundThreeChosen && choicesCorrect == 3)
+                winScreen();
+            else if (roundThreeChosen)
+                loseScreen();
+
+        }
     }
     public void CorrectButton()
     {
@@ -89,12 +97,12 @@ public class FinalDialogueChoices : MonoBehaviour
 
     public void winScreen()
     {
-        SceneManager.LoadScene(3);
+    //    SceneManager.LoadScene(3);
     }
 
     public void loseScreen()
     {
-        SceneManager.LoadScene(2);
+     //   SceneManager.LoadScene(2);
     }
     /*
 public GameObject dialoguePanel;

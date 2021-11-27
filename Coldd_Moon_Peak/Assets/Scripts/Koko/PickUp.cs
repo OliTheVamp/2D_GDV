@@ -10,11 +10,11 @@ public class PickUp : MonoBehaviour
     bool item4;
     bool item5;
     bool item6;
-
+    public bool finalDialogueActive;
     // Start is called before the first frame update
     void Start()
     {
-        
+        finalDialogueActive = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -46,12 +46,14 @@ public class PickUp : MonoBehaviour
         if (other.gameObject.tag == "item5")
         {
             Destroy(other.gameObject);
+            finalDialogueActive = true;
             Debug.Log("You got item 5");
             item5 = true;
         }
         if (other.gameObject.tag == "item6")
         {
             Destroy(other.gameObject);
+            finalDialogueActive = true;
             Debug.Log("You got item 6");
             item6 = true;
         }

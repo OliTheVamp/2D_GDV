@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Talking : MonoBehaviour
 {
@@ -17,17 +18,23 @@ public class Talking : MonoBehaviour
     public int chatValue = 12;
     public GameObject player;
     public GameObject ghost;
+    public bool dialogueSwappable;
 
     [Header("Visual Cue")]
     public GameObject visualCue;
-
     private bool playerInRange;
+
+    [Header("Final Dialogue")]
+    public PickUp pickupScript;
+    public bool finalDialoguePlay;
 
     private void Awake()
     {
         dialogueActive = false;
         playerInRange = false;
         visualCue.SetActive(false);
+        finalDialoguePlay = false;
+        dialogueSwappable = false;
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -68,8 +75,17 @@ public class Talking : MonoBehaviour
         {
             if (playerInRange)
             {
-                chatValue = 12;
-                dialogueActive = true;
+                if (pickupScript.finalDialogueActive)
+                {
+                    finalDialoguePlay = true;
+                    dialogueActive = true;
+                }
+                else
+                {
+                    chatValue = 12;
+                    dialogueActive = true;
+                    dialogueSwappable = true;
+                }
             }
         }
         if (!dialogueActive)
@@ -83,29 +99,38 @@ public class Talking : MonoBehaviour
             dialoguePanel.enabled = true;
             player.SetActive(false);
             player.SetActive(false);
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (dialogueSwappable)
             {
-                redTalks = !redTalks;
-                chatValue--;
-            }
-            if (chatValue == 0)
-            {
-                dialogueActive = false;
-            }
-            else
-            {
-                if (redTalks)
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
-
-                    redCharI.color = m_ActiveColor;
-                    blueCharI.color = m_InactiveColor;
+                    redTalks = !redTalks;
+                    chatValue--;
+                }
+                if (chatValue == 0)
+                {
+                    dialogueActive = false;
+                    dialogueSwappable = false;
                 }
                 else
                 {
-                    redCharI.color = m_InactiveColor;
-                    blueCharI.color = m_ActiveColor;
+                    if (redTalks)
+                    {
+
+                        redCharI.color = m_ActiveColor;
+                        blueCharI.color = m_InactiveColor;
+                    }
+                    else
+                    {
+                        redCharI.color = m_InactiveColor;
+                        blueCharI.color = m_ActiveColor;
+                    }
                 }
             }
         }
+    }
+    void finalDialogue()
+    {
+        finalDialoguePlay = true;
+
     }
 }

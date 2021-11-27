@@ -2886,6 +2886,7 @@ MonoBehaviour:
   Type: 0
   typyingSpeed: 0.02
   hideObject: {fileID: 769206716}
+  talkPlayer: {fileID: 2054000010}
 --- !u!1 &1583045037
 GameObject:
   m_ObjectHideFlags: 0
@@ -3021,7 +3022,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1615945401}
   - component: {fileID: 1615945400}
-  - component: {fileID: 1615945399}
   m_Layer: 0
   m_Name: heartOrange (2)
   m_TagString: item4
@@ -3029,32 +3029,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1615945399
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1615945398}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 30.007326, y: 20}
-    newSize: {x: 1.16, y: 1.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.16, y: 1.2}
-  m_EdgeRadius: 0
 --- !u!212 &1615945400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3890,6 +3864,15 @@ MonoBehaviour:
   visualCue: {fileID: 1615945398}
   pickupScript: {fileID: 769206717}
   finalDialoguePlay: 0
+  printedOne: 0
+  printedTwo: 0
+  printedTwoV2: 0
+  printedThree: 0
+  printedThreeV2: 0
+  printedFour: 0
+  printedFourV2: 0
+  printedFive: 0
+  printedSix: 0
 --- !u!4 &2054000011
 Transform:
   m_ObjectHideFlags: 0

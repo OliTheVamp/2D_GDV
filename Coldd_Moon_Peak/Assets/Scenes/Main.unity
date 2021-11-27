@@ -3862,7 +3862,7 @@ MonoBehaviour:
   dialogueSwappable: 0
   dialogueCount: 0
   visualCue: {fileID: 1615945398}
-  pickupScript: {fileID: 769206717}
+  hideScriptObject: {fileID: 769206716}
   finalDialoguePlay: 0
   printedOne: 0
   printedTwo: 0

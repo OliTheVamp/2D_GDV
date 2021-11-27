@@ -1638,6 +1638,7 @@ GameObject:
   - component: {fileID: 769206711}
   - component: {fileID: 769206710}
   - component: {fileID: 769206716}
+  - component: {fileID: 769206717}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1808,6 +1809,19 @@ MonoBehaviour:
   spacekeytime: 0
   eyeClosed: {fileID: 456207967}
   eyeOpen: {fileID: 574781203}
+--- !u!114 &769206717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769206709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94f54ca0572409d42a8e2db65abd77a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalDialogueActive: 0
 --- !u!1 &801390030
 GameObject:
   m_ObjectHideFlags: 0
@@ -3863,7 +3877,10 @@ MonoBehaviour:
   chatValue: 8
   player: {fileID: 769206709}
   ghost: {fileID: 1449334312}
+  dialogueSwappable: 0
   visualCue: {fileID: 1615945398}
+  pickupScript: {fileID: 769206717}
+  finalDialoguePlay: 0
 --- !u!4 &2054000011
 Transform:
   m_ObjectHideFlags: 0

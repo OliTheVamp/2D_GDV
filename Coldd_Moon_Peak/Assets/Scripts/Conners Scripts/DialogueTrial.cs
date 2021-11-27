@@ -45,7 +45,7 @@ public class DialogueTrial : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Type = true;
         }

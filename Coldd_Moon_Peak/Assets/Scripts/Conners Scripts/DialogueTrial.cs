@@ -209,62 +209,64 @@ public class DialogueTrial : MonoBehaviour
 
     void Update()
     {
-        if (hideObject.item1bool == false && hideObject.item2bool == false)
-        {
-            //if (!talkPlayer.printedOne)
-            //{
-                Print();
-                talkPlayer.printedOne = true;
-            //}
-        }
-        if (hideObject.item1bool)
-        {
-           // if (!talkPlayer.printedTwo)
-           // {
-                PrintTwo();
-                talkPlayer.printedTwo = true;
-           // }
-        }
-        if (hideObject.item2bool)
-        {
-           // if (!talkPlayer.printedTwoV2)
-            //{
-                PrintTwoV2();
-                talkPlayer.printedTwoV2 = true;
-           // }
-        }
-        if (hideObject.item3bool)
-        {
-           // if (!talkPlayer.printedThree)
-            //{
-                PrintThree();
-                talkPlayer.printedThree = true;
-           // }
-        }
-        if (hideObject.item4bool)
-        {
-          //  if (!talkPlayer.printedThreeV2)
-           // {
-                PrintThreeV2();
-                talkPlayer.printedThreeV2 = true;
-           // }
-        }
-        if (hideObject.item5bool)
-        {
-            //if (!talkPlayer.printedFour)
-           // {
-                PrintFour();
-                talkPlayer.printedFour = true;
-           // }
-        }
-        if (hideObject.item6bool)
-        {
-            //if (!talkPlayer.printedFourV2)
-            //{
-                PrintFourV2();
-                talkPlayer.printedFourV2 = true;
-            //}
-        }
+       if (talkPlayer.dialogueActive) { 
+          if (hideObject.item1bool == false && hideObject.item2bool == false)
+          {
+              //if (!talkPlayer.printedOne)
+              //{
+              Print();
+              talkPlayer.printedOne = true;
+              //}
+          }
+          if (hideObject.item1bool)
+          {
+              // if (!talkPlayer.printedTwo)
+              // {
+              PrintTwo();
+              talkPlayer.printedTwo = true;
+              // }
+          }
+          if (hideObject.item2bool)
+          {
+              // if (!talkPlayer.printedTwoV2)
+              //{
+              PrintTwoV2();
+              talkPlayer.printedTwoV2 = true;
+              // }
+          }
+          if (hideObject.item3bool)
+          {
+              // if (!talkPlayer.printedThree)
+              //{
+              PrintThree();
+              talkPlayer.printedThree = true;
+              // }
+          }
+          if (hideObject.item4bool)
+          {
+              //  if (!talkPlayer.printedThreeV2)
+              // {
+              PrintThreeV2();
+              talkPlayer.printedThreeV2 = true;
+              // }
+          }
+          if (hideObject.item5bool)
+          {
+              //if (!talkPlayer.printedFour)
+              // {
+              PrintFour();
+              talkPlayer.printedFour = true;
+              // }
+          }
+          if (hideObject.item6bool)
+          {
+              //if (!talkPlayer.printedFourV2)
+              //{
+              PrintFourV2();
+              talkPlayer.printedFourV2 = true;
+              //}
+          }
+       }
     }
     
     void Print() 

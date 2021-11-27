@@ -56,6 +56,18 @@ public class DialogueTrial : MonoBehaviour
     private List<string> eachLineFileFive;
     private List<string> eachLineFileSix;//
 
+    //Conversation finished bools
+    private bool convoOneFinished = false;
+    private bool convoTwoFinished = false;
+    private bool convoTwoV2Finished = false;
+    private bool convoThreeFinished = false;
+    private bool convoThreeV2Finished = false;
+    private bool convoFourFinished = false;
+    private bool convoFourV2Finished = false;
+    private bool convoFiveFinished = false;
+    private bool convoSixFinished = false;
+   
+
     public Hide hideObject;
     public Talking talkPlayer;
 
@@ -209,7 +221,7 @@ public class DialogueTrial : MonoBehaviour
 
     void Update()
     {
-        if (hideObject.item1bool == false && hideObject.item2bool == false)
+        if (!hideObject.item1bool && !hideObject.item2bool && !convoOneFinished)
         {
             //if (!talkPlayer.printedOne)
             //{
@@ -217,7 +229,7 @@ public class DialogueTrial : MonoBehaviour
                 talkPlayer.printedOne = true;
             //}
         }
-        if (hideObject.item1bool)
+        if (hideObject.item1bool && !convoTwoFinished)
         {
            // if (!talkPlayer.printedTwo)
            // {
@@ -225,7 +237,7 @@ public class DialogueTrial : MonoBehaviour
                 talkPlayer.printedTwo = true;
            // }
         }
-        if (hideObject.item2bool)
+        if (hideObject.item2bool && !convoTwoV2Finished)
         {
            // if (!talkPlayer.printedTwoV2)
             //{
@@ -233,7 +245,7 @@ public class DialogueTrial : MonoBehaviour
                 talkPlayer.printedTwoV2 = true;
            // }
         }
-        if (hideObject.item3bool)
+        if (hideObject.item3bool && !convoThreeFinished)
         {
            // if (!talkPlayer.printedThree)
             //{
@@ -241,7 +253,7 @@ public class DialogueTrial : MonoBehaviour
                 talkPlayer.printedThree = true;
            // }
         }
-        if (hideObject.item4bool)
+        if (hideObject.item4bool && !convoThreeV2Finished)
         {
           //  if (!talkPlayer.printedThreeV2)
            // {
@@ -249,7 +261,7 @@ public class DialogueTrial : MonoBehaviour
                 talkPlayer.printedThreeV2 = true;
            // }
         }
-        if (hideObject.item5bool)
+        if (hideObject.item5bool && !convoFourFinished)
         {
             //if (!talkPlayer.printedFour)
            // {
@@ -257,7 +269,7 @@ public class DialogueTrial : MonoBehaviour
                 talkPlayer.printedFour = true;
            // }
         }
-        if (hideObject.item6bool)
+        if (hideObject.item6bool && !convoFourV2Finished)
         {
             //if (!talkPlayer.printedFourV2)
             //{
@@ -269,8 +281,6 @@ public class DialogueTrial : MonoBehaviour
     
     void Print() 
     {
-
-       // side = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Type = true;
@@ -501,13 +511,16 @@ public class DialogueTrial : MonoBehaviour
             }
             Type = false;
             side++;
-
+        }
+        if (side == 12)
+        {
+            convoOneFinished = true;
+            side = 0;
         }
     }
 
     void PrintTwo()
     {
-        side = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Type = true;
@@ -740,12 +753,16 @@ public class DialogueTrial : MonoBehaviour
             Type = false;
             side++;
 
+        }
+        if (side == 12)
+        {
+            convoTwoFinished = true;
+            side = 0;
         }
     }
 
     void PrintTwoV2()
     {
-        side = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Type = true;
@@ -978,11 +995,15 @@ public class DialogueTrial : MonoBehaviour
             Type = false;
             side++;
 
+        }
+        if (side == 12)
+        {
+            side = 0;
+            convoTwoV2Finished = true;
         }
     }
     void PrintThree()
     {
-        side = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Type = true;
@@ -1215,11 +1236,15 @@ public class DialogueTrial : MonoBehaviour
             Type = false;
             side++;
 
+        }
+        if (side == 12)
+        {
+            side = 0;
+            convoThreeFinished = true;
         }
     }
     void PrintThreeV2()
     {
-        side = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Type = true;
@@ -1452,11 +1477,15 @@ public class DialogueTrial : MonoBehaviour
             Type = false;
             side++;
 
+        }
+        if (side == 12)
+        {
+            side = 0;
+            convoThreeV2Finished = true;
         }
     }
     void PrintFour()
     {
-        side = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Type = true;
@@ -1689,11 +1718,15 @@ public class DialogueTrial : MonoBehaviour
             Type = false;
             side++;
 
+        }
+        if (side == 12)
+        {
+            side = 0;
+            convoFourFinished = true;
         }
     }
     void PrintFourV2()
     {
-        side = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Type = true;
@@ -1926,11 +1959,16 @@ public class DialogueTrial : MonoBehaviour
             Type = false;
             side++;
 
+        }
+        if (side == 12)
+        {
+            side = 0;
+            convoFourV2Finished = true;
         }
     }
     void PrintFive()
     {
-        side = 0;
+       //ide = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Type = true;
@@ -2164,10 +2202,15 @@ public class DialogueTrial : MonoBehaviour
             side++;
 
         }
+        if (side == 12)
+        {
+            convoFiveFinished = true;
+            side = 0;
+         }
     }
     void PrintSix()
     {
-        side = 0;
+       // side = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Type = true;
@@ -2400,6 +2443,11 @@ public class DialogueTrial : MonoBehaviour
             Type = false;
             side++;
 
+        }
+        if (side == 12)
+        {
+            side = 0;
+            convoSixFinished = true;
         }
     }
 }

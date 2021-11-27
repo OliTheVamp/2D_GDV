@@ -31,7 +31,6 @@ public class DialogueTrial : MonoBehaviour
     private string[] sentenceFileFive;
     private string[] sentenceFileSix;
 
-
     private int index;
     private int side;
     public bool Type;
@@ -120,6 +119,13 @@ public class DialogueTrial : MonoBehaviour
     {
         FileOneSetup();
         FileTwoSetup();
+        FileTwoV2Setup();
+        FileThreeSetup();
+        FileThreeV2Setup();
+        FileFourSetup();
+        FileFourV2Setup();
+        FileFiveSetup();
+        FileSixSetup();
     }
 
     void Update()

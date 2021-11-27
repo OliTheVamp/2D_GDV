@@ -182,7 +182,6 @@ public class Hide : MonoBehaviour
             isInside = false;
             item1bool = true;
             item2bool = true;
-            objectQuest++;
         }
         if (other.gameObject.tag == "item2")
         {
@@ -190,7 +189,6 @@ public class Hide : MonoBehaviour
             isInside = false;
             item2bool = true;
             item1bool = true;
-            objectQuest++;
         }
         if (other.gameObject.tag == "item3")
         {
@@ -198,7 +196,6 @@ public class Hide : MonoBehaviour
             isInside = false;
             item3bool = true;
             item4bool = true;
-            objectQuest++;
         }
         if (other.gameObject.tag == "item4")
         {
@@ -206,7 +203,6 @@ public class Hide : MonoBehaviour
             isInside = false;
             item4bool = true;
             item3bool = true;
-            objectQuest++;
         }
         if (other.gameObject.tag == "item5")
         {
@@ -215,7 +211,6 @@ public class Hide : MonoBehaviour
             isInside = false;
             item5bool = true;
             item6bool = true;
-            objectQuest++;
         }
         if (other.gameObject.tag == "item6")
         {
@@ -224,7 +219,6 @@ public class Hide : MonoBehaviour
             isInside = false;
             item6bool = true;
             item5bool = true;
-            objectQuest++;
         }
 
     }

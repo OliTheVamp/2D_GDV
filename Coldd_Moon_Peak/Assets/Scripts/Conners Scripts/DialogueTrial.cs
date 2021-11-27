@@ -79,8 +79,8 @@ public class DialogueTrial : MonoBehaviour
         string[] sentenceFileTwo = new string[5];
         FileTwoLongString = TextFileTwo.text;
 
-        eachLineFileTwoV2 = new List<string>();
-        eachLineFileTwoV2.AddRange(FileTwoLongString.Split("\n"[0]));
+        eachLineFileTwo = new List<string>();
+        eachLineFileTwo.AddRange(FileTwoLongString.Split("\n"[0]));
 
 
         //sentenceFileTwo[0] = eachLineFileTwo[0];
@@ -211,72 +211,73 @@ public class DialogueTrial : MonoBehaviour
     {
         if (hideObject.item1bool == false && hideObject.item2bool == false)
         {
-            if (!talkPlayer.printedOne)
-            {
+            //if (!talkPlayer.printedOne)
+            //{
                 Print();
                 talkPlayer.printedOne = true;
-            }
+            //}
         }
         if (hideObject.item1bool)
         {
-            if (!talkPlayer.printedTwo)
-            {
+           // if (!talkPlayer.printedTwo)
+           // {
                 PrintTwo();
                 talkPlayer.printedTwo = true;
-            }
+           // }
         }
         if (hideObject.item2bool)
         {
-            if (!talkPlayer.printedTwoV2)
-            {
+           // if (!talkPlayer.printedTwoV2)
+            //{
                 PrintTwoV2();
                 talkPlayer.printedTwoV2 = true;
-            }
+           // }
         }
         if (hideObject.item3bool)
         {
-            if (!talkPlayer.printedThree)
-            {
+           // if (!talkPlayer.printedThree)
+            //{
                 PrintThree();
                 talkPlayer.printedThree = true;
-            }
+           // }
         }
         if (hideObject.item4bool)
         {
-            if (!talkPlayer.printedThreeV2)
-            {
+          //  if (!talkPlayer.printedThreeV2)
+           // {
                 PrintThreeV2();
                 talkPlayer.printedThreeV2 = true;
-            }
+           // }
         }
         if (hideObject.item5bool)
         {
-            if (!talkPlayer.printedFour)
-            {
+            //if (!talkPlayer.printedFour)
+           // {
                 PrintFour();
                 talkPlayer.printedFour = true;
-            }
+           // }
         }
         if (hideObject.item6bool)
         {
-            if (!talkPlayer.printedFourV2)
-            {
+            //if (!talkPlayer.printedFourV2)
+            //{
                 PrintFourV2();
                 talkPlayer.printedFourV2 = true;
-            }
+            //}
         }
     }
     
     void Print() 
     {
 
-        side = 0;
+       // side = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Type = true;
         }
         if (side == 0)
         {
+            Words.text = "";
             //Words.text = eachLine[side];
             foreach (char Letter in eachLine[side].ToCharArray())
             {
@@ -293,7 +294,7 @@ public class DialogueTrial : MonoBehaviour
             side++;
 
         }
-        if (side == 1 && Type == true)
+        if (side == 1 && Input.GetKeyDown(KeyCode.Space))
         {
             Words.text = "";
             //Words.text = eachLine[side];
@@ -513,6 +514,7 @@ public class DialogueTrial : MonoBehaviour
         }
         if (side == 0)
         {
+            Words.text = "";
             //Words.text = eachLine[side];
             foreach (char Letter in eachLineFileTwo[side].ToCharArray())
             {
@@ -750,6 +752,7 @@ public class DialogueTrial : MonoBehaviour
         }
         if (side == 0)
         {
+            Words.text = "";
             //Words.text = eachLine[side];
             foreach (char Letter in eachLineFileTwo[side].ToCharArray())
             {
@@ -986,6 +989,7 @@ public class DialogueTrial : MonoBehaviour
         }
         if (side == 0)
         {
+            Words.text = "";
             //Words.text = eachLine[side];
             foreach (char Letter in eachLineFileTwo[side].ToCharArray())
             {
@@ -1222,6 +1226,7 @@ public class DialogueTrial : MonoBehaviour
         }
         if (side == 0)
         {
+            Words.text = "";
             //Words.text = eachLine[side];
             foreach (char Letter in eachLineFileTwo[side].ToCharArray())
             {
@@ -1458,6 +1463,7 @@ public class DialogueTrial : MonoBehaviour
         }
         if (side == 0)
         {
+            Words.text = "";
             //Words.text = eachLine[side];
             foreach (char Letter in eachLineFileTwo[side].ToCharArray())
             {
@@ -1694,6 +1700,7 @@ public class DialogueTrial : MonoBehaviour
         }
         if (side == 0)
         {
+            Words.text = "";
             //Words.text = eachLine[side];
             foreach (char Letter in eachLineFileTwo[side].ToCharArray())
             {
@@ -1930,6 +1937,7 @@ public class DialogueTrial : MonoBehaviour
         }
         if (side == 0)
         {
+            Words.text = "";
             //Words.text = eachLine[side];
             foreach (char Letter in eachLineFileTwo[side].ToCharArray())
             {
@@ -2166,6 +2174,7 @@ public class DialogueTrial : MonoBehaviour
         }
         if (side == 0)
         {
+            Words.text = "";
             //Words.text = eachLine[side];
             foreach (char Letter in eachLineFileTwo[side].ToCharArray())
             {

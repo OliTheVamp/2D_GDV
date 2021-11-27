@@ -2885,7 +2885,7 @@ MonoBehaviour:
   Words: {fileID: 1583045039}
   Type: 0
   typyingSpeed: 0.02
-  hideObject: {fileID: 0}
+  hideObject: {fileID: 769206716}
 --- !u!1 &1583045037
 GameObject:
   m_ObjectHideFlags: 0

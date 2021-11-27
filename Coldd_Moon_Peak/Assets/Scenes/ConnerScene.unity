@@ -490,8 +490,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69b270a2d985d1469063dfe6ddf5918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dictionaryTextFile: {fileID: 4900000, guid: 0c67069b45b42664ba0b304f8e510af3, type: 3}
+  TextFileOne: {fileID: 4900000, guid: 0c67069b45b42664ba0b304f8e510af3, type: 3}
+  TextFileTwo: {fileID: 4900000, guid: 226bad8909508a345be23c099240f8f1, type: 3}
+  TextFileTwoV2: {fileID: 4900000, guid: 32e513e5b6ca6a54c9839aeb68b19e5e, type: 3}
+  TextFileThree: {fileID: 4900000, guid: cf7981b698c90a248b8f85f1e4c50341, type: 3}
+  TextFileThreeV2: {fileID: 4900000, guid: b01960c34009ada43bb2facab50ed813, type: 3}
+  TextFileFour: {fileID: 4900000, guid: 327708929b28f95449ad34b9fb8c1d2f, type: 3}
+  TextFileFourV2: {fileID: 4900000, guid: 935f8f89fa264ce41a858e71ae710b0d, type: 3}
+  TextFileFive: {fileID: 4900000, guid: 97ccd12da6e65b8459f7e9e5cc06832b, type: 3}
+  TextFileSix: {fileID: 4900000, guid: 5617d3507fa6ca04c915859e9ce50b17, type: 3}
   Words: {fileID: 324484650}
+  Type: 0
+  typyingSpeed: 0.02
+  hideObject: {fileID: 0}
 --- !u!1 &738665067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f54ca0572409d42a8e2db65abd77a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalDialogueActive: 0
 --- !u!1001 &3773754270469880113
 PrefabInstance:
   m_ObjectHideFlags: 0

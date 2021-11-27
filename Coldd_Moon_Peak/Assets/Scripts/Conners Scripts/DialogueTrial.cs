@@ -67,10 +67,10 @@ public class DialogueTrial : MonoBehaviour
         eachLine.AddRange(theWholeFileAsOneLongString.Split("\n"[0]));
 
 
-        sentence[0] = eachLine[0];
-        sentence[1] = eachLine[1];
-        sentence[2] = eachLine[2];
-        sentence[3] = eachLine[3];
+        //sentence[0] = eachLine[0];
+        //sentence[1] = eachLine[1];
+        //sentence[2] = eachLine[2];
+        //sentence[3] = eachLine[3];
     } 
   
     void FileTwoSetup()
@@ -82,10 +82,10 @@ public class DialogueTrial : MonoBehaviour
         eachLineFileTwoV2.AddRange(FileTwoLongString.Split("\n"[0]));
 
 
-        sentenceFileTwo[0] = eachLineFileTwo[0];
-        sentenceFileTwo[1] = eachLineFileTwo[1];
-        sentenceFileTwo[2] = eachLineFileTwo[2];
-        sentenceFileTwo[3] = eachLineFileTwo[3];
+        //sentenceFileTwo[0] = eachLineFileTwo[0];
+        //sentenceFileTwo[1] = eachLineFileTwo[1];
+        //sentenceFileTwo[2] = eachLineFileTwo[2];
+        //sentenceFileTwo[3] = eachLineFileTwo[3];
     }
    
     void FileTwoV2Setup()
@@ -97,10 +97,10 @@ public class DialogueTrial : MonoBehaviour
         eachLineFileTwoV2.AddRange(FileTwoV2LongString.Split("\n"[0]));
 
 
-        sentenceFileTwoV2[0] = eachLineFileTwoV2[0];
-        sentenceFileTwoV2[1] = eachLineFileTwoV2[1];
-        sentenceFileTwoV2[2] = eachLineFileTwoV2[2];
-        sentenceFileTwoV2[3] = eachLineFileTwoV2[3];
+        //sentenceFileTwoV2[0] = eachLineFileTwoV2[0];
+        //sentenceFileTwoV2[1] = eachLineFileTwoV2[1];
+        //sentenceFileTwoV2[2] = eachLineFileTwoV2[2];
+        //sentenceFileTwoV2[3] = eachLineFileTwoV2[3];
     }
 
     void FileThreeSetup()
@@ -112,10 +112,10 @@ public class DialogueTrial : MonoBehaviour
         eachLineFileThree.AddRange(FileThreeLongString.Split("\n"[0]));
 
 
-        sentenceFileThree[0] = eachLineFileThree[0];
-        sentenceFileThree[1] = eachLineFileThree[1];
-        sentenceFileThree[2] = eachLineFileThree[2];
-        sentenceFileThree[3] = eachLineFileThree[3];
+        //sentenceFileThree[0] = eachLineFileThree[0];
+        //sentenceFileThree[1] = eachLineFileThree[1];
+        //sentenceFileThree[2] = eachLineFileThree[2];
+        //sentenceFileThree[3] = eachLineFileThree[3];
     }
 
     void FileThreeV2Setup()
@@ -127,10 +127,10 @@ public class DialogueTrial : MonoBehaviour
         eachLineFileThreeV2.AddRange(FileThreeV2LongString.Split("\n"[0]));
 
 
-        sentenceFileThreeV2[0] = eachLineFileThreeV2[0];
-        sentenceFileThreeV2[1] = eachLineFileThreeV2[1];
-        sentenceFileThreeV2[2] = eachLineFileThreeV2[2];
-        sentenceFileThreeV2[3] = eachLineFileThreeV2[3];
+        //sentenceFileThreeV2[0] = eachLineFileThreeV2[0];
+        //sentenceFileThreeV2[1] = eachLineFileThreeV2[1];
+        //sentenceFileThreeV2[2] = eachLineFileThreeV2[2];
+        //sentenceFileThreeV2[3] = eachLineFileThreeV2[3];
     }
 
     void FileFourSetup()
@@ -142,10 +142,10 @@ public class DialogueTrial : MonoBehaviour
         eachLineFileFour.AddRange(FileFourLongString.Split("\n"[0]));
 
 
-        sentenceFileFour[0] = eachLineFileFour[0];
-        sentenceFileFour[1] = eachLineFileFour[1];
-        sentenceFileFour[2] = eachLineFileFour[2];
-        sentenceFileFour[3] = eachLineFileFour[3];
+        //sentenceFileFour[0] = eachLineFileFour[0];
+        //sentenceFileFour[1] = eachLineFileFour[1];
+        //sentenceFileFour[2] = eachLineFileFour[2];
+        //sentenceFileFour[3] = eachLineFileFour[3];
     }
 
     void FileFourV2Setup()
@@ -157,10 +157,10 @@ public class DialogueTrial : MonoBehaviour
         eachLineFileFourV2.AddRange(FileFourV2LongString.Split("\n"[0]));
 
 
-        sentenceFileFourV2[0] = eachLineFileFourV2[0];
-        sentenceFileFourV2[1] = eachLineFileFourV2[1];
-        sentenceFileFourV2[2] = eachLineFileFourV2[2];
-        sentenceFileFourV2[3] = eachLineFileFourV2[3];
+        //sentenceFileFourV2[0] = eachLineFileFourV2[0];
+        //sentenceFileFourV2[1] = eachLineFileFourV2[1];
+        //sentenceFileFourV2[2] = eachLineFileFourV2[2];
+        //sentenceFileFourV2[3] = eachLineFileFourV2[3];
     }
 
     void FileFiveSetup()
@@ -172,10 +172,10 @@ public class DialogueTrial : MonoBehaviour
         eachLineFileFive.AddRange(FileFiveLongString.Split("\n"[0]));
 
 
-        sentenceFileFive[0] = eachLineFileFive[0];
-        sentenceFileFive[1] = eachLineFileFive[1];
-        sentenceFileFive[2] = eachLineFileFive[2];
-        sentenceFileFive[3] = eachLineFileFive[3];
+        //sentenceFileFive[0] = eachLineFileFive[0];
+        //sentenceFileFive[1] = eachLineFileFive[1];
+        //sentenceFileFive[2] = eachLineFileFive[2];
+        //sentenceFileFive[3] = eachLineFileFive[3];
     }
 
     void FileSixSetup()
@@ -187,10 +187,10 @@ public class DialogueTrial : MonoBehaviour
         eachLineFileFive.AddRange(FileFiveLongString.Split("\n"[0]));
 
 
-        sentenceFileSix[0] = eachLineFileSix[0];
-        sentenceFileSix[1] = eachLineFileSix[1];
-        sentenceFileSix[2] = eachLineFileSix[2];
-        sentenceFileSix[3] = eachLineFileSix[3];
+        //sentenceFileSix[0] = eachLineFileSix[0];
+        //sentenceFileSix[1] = eachLineFileSix[1];
+        //sentenceFileSix[2] = eachLineFileSix[2];
+        //sentenceFileSix[3] = eachLineFileSix[3];
     }
 
     void Start()

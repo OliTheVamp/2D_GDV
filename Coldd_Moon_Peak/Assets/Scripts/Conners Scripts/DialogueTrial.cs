@@ -774,7 +774,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -793,7 +793,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -812,7 +812,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -831,7 +831,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -850,7 +850,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -869,7 +869,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -888,7 +888,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
 
             {
                 if (Letter != '|')
@@ -908,7 +908,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -927,7 +927,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -946,7 +946,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -965,7 +965,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -984,7 +984,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileTwoV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1015,7 +1015,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1034,7 +1034,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1053,7 +1053,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1072,7 +1072,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1091,7 +1091,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1110,7 +1110,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1129,7 +1129,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
 
             {
                 if (Letter != '|')
@@ -1149,7 +1149,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1168,7 +1168,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1187,7 +1187,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1206,7 +1206,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1225,7 +1225,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThree[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1256,7 +1256,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1275,7 +1275,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1294,7 +1294,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1313,7 +1313,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1332,7 +1332,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1351,7 +1351,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1370,7 +1370,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
 
             {
                 if (Letter != '|')
@@ -1390,7 +1390,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1409,7 +1409,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1428,7 +1428,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1447,7 +1447,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1466,7 +1466,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileThreeV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1497,7 +1497,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1516,7 +1516,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1535,7 +1535,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1554,7 +1554,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1573,7 +1573,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1592,7 +1592,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1611,7 +1611,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
 
             {
                 if (Letter != '|')
@@ -1631,7 +1631,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1650,7 +1650,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1669,7 +1669,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1688,7 +1688,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1707,7 +1707,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFour[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1738,7 +1738,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1757,7 +1757,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1776,7 +1776,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1795,7 +1795,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1814,7 +1814,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1833,7 +1833,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1852,7 +1852,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
 
             {
                 if (Letter != '|')
@@ -1872,26 +1872,26 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
-            {
-                if (Letter != '|')
-                {
-                    Words.text += Letter;
-                }
-                else
-                {
-                    break;
-                }
-            }
-            Type = false;
-            side++;
-
-        }
-        if (side == 8 && Type == true)
-        {
-            Words.text = "";
-            //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
+            {                                   
+                if (Letter != '|')              
+                {                               
+                    Words.text += Letter;       
+                }                               
+                else                            
+                {                               
+                    break;                      
+                }                               
+            }                                   
+            Type = false;                       
+            side++;                             
+                                                
+        }                                       
+        if (side == 8 && Type == true)          
+        {                                       
+            Words.text = "";                    
+            //Words.text = eachLine[side];      
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1910,45 +1910,45 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
-            {
-                if (Letter != '|')
-                {
-                    Words.text += Letter;
-                }
-                else
-                {
-                    break;
-                }
-            }
-            Type = false;
-            side++;
-
-        }
-        if (side == 10 && Type == true)
-        {
-            Words.text = "";
-            //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
-            {
-                if (Letter != '|')
-                {
-                    Words.text += Letter;
-                }
-                else
-                {
-                    break;
-                }
-            }
-            Type = false;
-            side++;
-
-        }
-        if (side == 11 && Type == true)
-        {
-            Words.text = "";
-            //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
+            {                                 
+                if (Letter != '|')            
+                {                             
+                    Words.text += Letter;     
+                }                             
+                else                          
+                {                             
+                    break;                    
+                }                             
+            }                                 
+            Type = false;                     
+            side++;                           
+                                              
+        }                                     
+        if (side == 10 && Type == true)       
+        {                                     
+            Words.text = "";                  
+            //Words.text = eachLine[side];    
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
+            {                                  
+                if (Letter != '|')             
+                {                              
+                    Words.text += Letter;      
+                }                              
+                else                           
+                {                              
+                    break;                     
+                }                              
+            }                                  
+            Type = false;                      
+            side++;                            
+                                               
+        }                                      
+        if (side == 11 && Type == true)        
+        {                                      
+            Words.text = "";                   
+            //Words.text = eachLine[side];     
+            foreach (char Letter in eachLineFileFourV2[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1980,7 +1980,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -1999,7 +1999,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2018,7 +2018,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2037,7 +2037,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2056,7 +2056,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2075,7 +2075,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2094,7 +2094,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
 
             {
                 if (Letter != '|')
@@ -2114,7 +2114,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2133,7 +2133,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2152,7 +2152,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2171,7 +2171,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2190,7 +2190,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileFive[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2222,7 +2222,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2241,7 +2241,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2260,7 +2260,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2279,7 +2279,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2298,7 +2298,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2317,7 +2317,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2336,7 +2336,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
 
             {
                 if (Letter != '|')
@@ -2356,7 +2356,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2375,7 +2375,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2394,7 +2394,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2413,7 +2413,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
             {
                 if (Letter != '|')
                 {
@@ -2432,7 +2432,7 @@ public class DialogueTrial : MonoBehaviour
         {
             Words.text = "";
             //Words.text = eachLine[side];
-            foreach (char Letter in eachLineFileTwo[side].ToCharArray())
+            foreach (char Letter in eachLineFileSix[side].ToCharArray())
             {
                 if (Letter != '|')
                 {

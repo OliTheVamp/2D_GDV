@@ -181,28 +181,28 @@ public class Hide : MonoBehaviour
             Debug.Log("You got item 1");
             isInside = false;
             item1bool = true;
-            item2bool = true;
+            item2bool = false;
         }
         if (other.gameObject.tag == "item2")
         {
             Debug.Log("You got item 2");
             isInside = false;
             item2bool = true;
-            item1bool = true;
+            item1bool = false;
         }
         if (other.gameObject.tag == "item3")
         {
             Debug.Log("You got item 3");
             isInside = false;
             item3bool = true;
-            item4bool = true;
+            item4bool = false;
         }
         if (other.gameObject.tag == "item4")
         {
             Debug.Log("You got item 4");
             isInside = false;
             item4bool = true;
-            item3bool = true;
+            item3bool = false;
         }
         if (other.gameObject.tag == "item5")
         {
@@ -210,7 +210,7 @@ public class Hide : MonoBehaviour
             finalDialogueActive = true;
             isInside = false;
             item5bool = true;
-            item6bool = true;
+            item6bool = false;
         }
         if (other.gameObject.tag == "item6")
         {
@@ -218,7 +218,7 @@ public class Hide : MonoBehaviour
             finalDialogueActive = true;
             isInside = false;
             item6bool = true;
-            item5bool = true;
+            item5bool = false;
         }
 
     }

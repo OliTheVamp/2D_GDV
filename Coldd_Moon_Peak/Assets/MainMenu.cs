@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     //If clicked, Game begins
     public void PlayGame ()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
     }
 
     //If clicked, Game Quits

@@ -8,6 +8,6 @@ public class EndingUI : MonoBehaviour
     //Returns User to main menu
     public void MainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene(0);
     }
 }

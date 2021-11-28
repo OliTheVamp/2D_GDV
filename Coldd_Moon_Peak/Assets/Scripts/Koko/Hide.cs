@@ -16,7 +16,7 @@ public class Hide : MonoBehaviour
     public GameObject tint;
     public bool finalDialogueActive;
     public float tint_timer;
-    public float maxTime = 1f;
+    public float maxTime = 10f;
     public float timeSpan = 0.1f;
     public float spacekeytime;
 
@@ -53,6 +53,10 @@ public class Hide : MonoBehaviour
         visible = false;
         tint_timer = maxTime;
     }
+    void OnEnable()
+    {
+        tint_timer = maxTime;
+    }
 
     // Update is called once per frame
     void Update()
@@ -81,10 +85,6 @@ public class Hide : MonoBehaviour
         if (item6bool)
         {
             item6.SetActive(false);
-        }
-        if (dialogueCount.dialogueActive == true)
-        {
-            tint_timer = maxTime;
         }
 
         //things underneath will occur when Z is held down

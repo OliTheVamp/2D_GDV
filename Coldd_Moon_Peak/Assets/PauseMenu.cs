@@ -6,22 +6,30 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
+    public Talking isTalking;
 
     public GameObject pauseMenuUI;
-
+    void Start()
+    {
+        GameIsPaused = false;
+        pauseMenuUI.SetActive(false);
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (GameIsPaused)
+        if (!isTalking.dialogueActive)
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                Resume();
+                {
+                    if (GameIsPaused)
+                    {
+                        Resume();
+                    }
+                    else
+                    {
+                        Pause();
+                    }
+                }
             }
-            else
-            {
-                Pause();
-            }
-        }
     }
 
     public void Resume()

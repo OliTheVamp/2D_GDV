@@ -10,6 +10,9 @@ public class FinalDialogueChoices : MonoBehaviour
     public bool roundTwoChosen = false;
     public bool roundThreeChosen = false;
 
+    public GameObject LosePanel;
+    public GameObject WinPanel;
+
     public int choicesCorrect = 0;
 
     public Button choiceOne;
@@ -29,7 +32,8 @@ public class FinalDialogueChoices : MonoBehaviour
          choiceFour.gameObject.SetActive(false);
          choiceFive.gameObject.SetActive(false);
          choiceSix.gameObject.SetActive(false);
-        
+         LosePanel.gameObject.SetActive(false);
+         WinPanel.gameObject.SetActive(false);
     }
     void Update()
     {
@@ -97,12 +101,13 @@ public class FinalDialogueChoices : MonoBehaviour
 
     public void winScreen()
     {
-    //    SceneManager.LoadScene(3);
+        WinPanel.gameObject.SetActive(true);
     }
 
     public void loseScreen()
     {
-     //   SceneManager.LoadScene(2);
+        LosePanel.gameObject.SetActive(true);
+
     }
     /*
 public GameObject dialoguePanel;

@@ -3728,7 +3728,8 @@ MonoBehaviour:
   dialogueCount: {fileID: 2054000010}
   tint: {fileID: 251198071}
   finalDialogueActive: 0
-  maxTime: 100
+  tint_timer: 0
+  maxTime: 10
   timeSpan: 0.1
   spacekeytime: 0
   item1bool: 0

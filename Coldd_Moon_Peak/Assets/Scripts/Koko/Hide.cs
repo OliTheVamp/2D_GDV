@@ -15,8 +15,8 @@ public class Hide : MonoBehaviour
     private bool isInside;
     public GameObject tint;
     public bool finalDialogueActive;
-    float tint_timer;
-    public float maxTime = 5f;
+    public float tint_timer;
+    public float maxTime = 1f;
     public float timeSpan = 0.1f;
     public float spacekeytime;
 
@@ -82,7 +82,10 @@ public class Hide : MonoBehaviour
         {
             item6.SetActive(false);
         }
-
+        if (dialogueCount.dialogueActive == true)
+        {
+            tint_timer = maxTime;
+        }
 
         //things underneath will occur when Z is held down
         if (Input.GetKey(KeyCode.Z)) //User holds down Z
